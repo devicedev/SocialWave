@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SocialWave</string>
+    <string name="sing_up">Sign Up</string>
+    <string name="forget_pwd">Forget Password</string>
+    <string name="login">Login</string>
+    <string name="email_hint">Enter email...</string>
+    <string name="password_hint">Enter password...</string>
+    <string name="name_hint">Enter name...</string>
+    <string name="male_radio_button">Male</string>
+    <string name="female_radio_button">Female</string>
+    <string name="date_hint">01-01-2000</string>
+</resources>
