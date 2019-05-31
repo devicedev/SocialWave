@@ -8,5 +8,6 @@
     <string name="name_hint">Enter name...</string>
     <string name="male_radio_button">Male</string>
     <string name="female_radio_button">Female</string>
-    <string name="date_hint">01-01-2000</string>
+    <string name="birthday_hint">Enter birthday...</string>
+    <string name="back_button">Back</string>
 </resources>

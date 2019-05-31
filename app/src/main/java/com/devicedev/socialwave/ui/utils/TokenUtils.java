@@ -1,9 +1,13 @@
 package com.devicedev.socialwave.ui.utils;
 
+import android.util.Log;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class TokenUtils {
+    private static final String TAG = TokenUtils.class.getSimpleName();
+    
 
 
     public static boolean isValid(String token) {
@@ -12,7 +16,7 @@ public class TokenUtils {
         }
 
         try {
-            long exp = Integer.parseInt(new JSONObject(JWTUtils.get(token, 1)).getString("exp"));
+            long exp = Integer.parseInt(new JSONObject(JWTUtils.get(token, 0)).getString("exp"));
 
             long now = System.currentTimeMillis() / 1000L;
 

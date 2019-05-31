@@ -63,13 +63,12 @@
 
     <Button
         android:id="@+id/signUpButton"
-        style="@style/ButtonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/btn_border"
+        android:background="@drawable/btn_default"
         android:text="@string/sing_up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/forgetPasswordButton"
@@ -79,13 +78,11 @@
 
     <Button
         android:id="@+id/forgetPasswordButton"
-        style="@style/ButtonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/btn_border"
         android:padding="8dp"
         android:text="@string/forget_pwd"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -95,7 +92,6 @@
 
     <Button
         android:id="@+id/loginButton"
-        style="@style/ButtonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -103,7 +99,6 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/btn_border"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

@@ -9,24 +9,16 @@ public class PasswordPatterns {
 
     //    At least 1 digit
     public static final Pattern DIGIT =
-            Pattern.compile("^" +
-                    "(?=.*[0-9])" +
-                    "$");
+            Pattern.compile("[0-9]");
     //    At least 1 upper case character
     public static final Pattern UPPER_CASE =
-            Pattern.compile("^" +
-                    "(?=.*[a-z])" +
-                    "$");
+            Pattern.compile("[A-Z]");
     //    At least 1 lower case character
     public static final Pattern LOWER_CASE =
-            Pattern.compile("^" +
-                    "(?=.*[a-z])" +
-                    "$");
+            Pattern.compile("[a-z]");
     //    No white spaces
-    public static final Pattern WHITE_SPACES =
-            Pattern.compile("^" +
-                    "(?=\\S+$)" +
-                    "$");
+//    public static final Pattern WHITE_SPACES =
+//            Pattern.compile("^\\S*$");
     //    At least MIN_CHARACTERS characters
     public static final Pattern MIN =
             Pattern.compile("^" +

@@ -32,7 +32,6 @@ import es.dmoral.toasty.Toasty;
 public class LoginActivity extends AppCompatActivity implements ViewModelResponse {
     private static final String TAG = LoginActivity.class.getSimpleName();
 
-    public static final String EXTRA_TOKEN = "com.devicedev.socialwave.ui.login.EXTRA_TOKEN";
 
     private static final Integer SHOW_SPLASH_SCREEN = 1 * 1000;
 
@@ -72,9 +71,7 @@ public class LoginActivity extends AppCompatActivity implements ViewModelRespons
 
         token = SharedPreferencesTokenUtils.get(getSharedPreferences(LoginActivity.PREFERENCES, MODE_PRIVATE));
 
-//        BUG isValid
         final Boolean tokenIsValid = TokenUtils.isValid(token);
-        Log.d(TAG, "onCreate: "+tokenIsValid);
 
         if(!tokenIsValid){
             loginViewModel = ViewModelProviders.of(this,new LoginViewModelFactory(getApplication(),this)).get(LoginViewModel.class);
@@ -94,8 +91,6 @@ public class LoginActivity extends AppCompatActivity implements ViewModelRespons
 
                     showLoginScreen();
 
-                    toggleProgressBar(View.INVISIBLE);
-
                     loginViewModel.getUserTokenResponse().observe(LoginActivity.this, new Observer<UserTokenResponse>() {
                         @Override
                         public void onChanged(UserTokenResponse userTokenResponse) {
@@ -107,9 +102,6 @@ public class LoginActivity extends AppCompatActivity implements ViewModelRespons
                             token = userTokenResponse.getToken();
 
                             SharedPreferencesTokenUtils.save(getSharedPreferences(LoginActivity.PREFERENCES, MODE_PRIVATE),token);
-
-                            Log.d(TAG, "onChanged: "+SharedPreferencesTokenUtils.get(getSharedPreferences(LoginActivity.PREFERENCES,MODE_PRIVATE)));
-
 
                             startMainActivity();
 
@@ -127,18 +119,22 @@ public class LoginActivity extends AppCompatActivity implements ViewModelRespons
                     });
 
                     loginButton.setOnClickListener(new View.OnClickListener() {
+
                         @Override
                         public void onClick(View v) {
+
+                            toggleProgressBar(View.VISIBLE);
 
                             String email = emailEditText.getText().toString().trim();
 
                             String password = passwordEditText.getText().toString().trim();
 
 
-                            if(!Validator.Login.email(emailEditText,email) || !Validator.Login.password(passwordEditText,password)){
+                            if(!Validator.Login.email(emailEditText,email) | !Validator.Login.password(passwordEditText,password)){
+                                toggleProgressBar(View.INVISIBLE);
+
                                 return;
                             }
-                            toggleProgressBar(View.VISIBLE);
 
 
 
@@ -184,8 +180,6 @@ public class LoginActivity extends AppCompatActivity implements ViewModelRespons
     private void startMainActivity(){
         Intent intent = new Intent(this, MainActivity.class);
 
-        intent.putExtra(EXTRA_TOKEN,token);
-
         startActivity(intent);
 
         finish();
@@ -195,8 +189,6 @@ public class LoginActivity extends AppCompatActivity implements ViewModelRespons
         Intent intent = new Intent(this, RegisterActivity.class);
 
         startActivity(intent);
-
-        finish();
 
     }
     private void initialize(){
