@@ -16,7 +16,7 @@ public class TokenUtils {
         }
 
         try {
-            long exp = Integer.parseInt(new JSONObject(JWTUtils.get(token, 0)).getString("exp"));
+            long exp = Integer.parseInt(new JSONObject(JWTUtils.get(token, 1)).getString("exp"));
 
             long now = System.currentTimeMillis() / 1000L;
 

@@ -1,6 +1,7 @@
 package com.devicedev.socialwave.ui.register;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.app.AlertDialog;
@@ -23,7 +24,9 @@ import java.time.LocalDate;
 import java.util.Date;
 
 import com.devicedev.socialwave.R;
+import com.devicedev.socialwave.data.api.responses.UserTokenResponse;
 import com.devicedev.socialwave.ui.main.MainActivity;
+import com.devicedev.socialwave.ui.utils.SharedPreferencesTokenUtils;
 import com.devicedev.socialwave.ui.utils.Validator;
 import com.devicedev.socialwave.ui.utils.ViewModelResponse;
 
@@ -56,6 +59,8 @@ public class RegisterActivity extends AppCompatActivity implements DatePickerDia
 
 
     private RegisterViewModel registerViewModel;
+
+    private String token;
 
 
     @Override
@@ -107,9 +112,10 @@ public class RegisterActivity extends AppCompatActivity implements DatePickerDia
 
                 String password = passwordEditText.getText().toString().trim();
 
+                String gender = null;
+
                 String birthday = birthdayTextView.getText().toString();
 
-                String gender = null;
 
                 if (maleRadioButton.isChecked() && !femaleRadioButton.isChecked()) {
 
@@ -133,9 +139,25 @@ public class RegisterActivity extends AppCompatActivity implements DatePickerDia
                     return;
                 }
 
-//                registerViewModel.register();
+                registerViewModel.register(name,email,password,gender,birthday);
 
 
+            }
+        });
+
+        registerViewModel.getUserTokenResponse().observe(this, new Observer<UserTokenResponse>() {
+            @Override
+            public void onChanged(UserTokenResponse userTokenResponse) {
+                if(userTokenResponse == null)
+                    return;
+
+                toggleProgressBar(View.INVISIBLE);
+
+                token = userTokenResponse.getToken();
+
+                SharedPreferencesTokenUtils.save(getSharedPreferences(SharedPreferencesTokenUtils.PREFERENCES,MODE_PRIVATE),token);
+
+                startMainActivity();
             }
         });
 

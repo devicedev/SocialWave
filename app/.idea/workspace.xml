@@ -19,28 +19,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419c8712-b07f-4caf-bda6-713b7b24dad8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModelFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-v24/btn_disabled.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-v24/btn_pressed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/btn_app.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/btn_default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/values/integers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/data/room/rooms/UserRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModelRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModelRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/PasswordPatterns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/PasswordPatterns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/SharedPreferencesTokenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/SharedPreferencesTokenUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/TokenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/TokenUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/btn_border.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_start.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_start.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_start_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_start_login.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/header.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,36 +47,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="118" column="23" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="140" selection-start-line="140" selection-end-line="140" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2165#2233#0" expanded="true" />
-                <element signature="e#2883#4330#0" expanded="true" />
-                <element signature="e#3980#4048#0" expanded="true" />
-                <element signature="e#4329#4330#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -94,15 +56,13 @@
         <option value="Interface" />
         <option value="layoutResourceFile_vertical" />
         <option value="resourceFile" />
-        <option value="Class" />
         <option value="valueResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>emailEditText</find>
-      <find>inputEditText</find>
       <find>passwordEditText</find>
       <find>passwrod_hint</find>
       <find>sty</find>
@@ -131,6 +91,8 @@
       <find>digit</find>
       <find>long</find>
       <find>WHITE</find>
+      <find>lastUser</find>
+      <find>token</find>
     </findStrings>
     <replaceStrings>
       <replace>inputEditText</replace>
@@ -146,9 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/utils/PasswordPatterns.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/ViewModelResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/utils/Validator.java" />
         <option value="$PROJECT_DIR$/../build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/data/api/UserClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/utils/ServerGenerator.java" />
@@ -173,30 +132,33 @@
         <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/data/room/entities/UserEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/data/room/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/data/utils/ErrorUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModelRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/SharedPreferencesTokenUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/TokenUtils.java" />
         <option value="$PROJECT_DIR$/src/main/res/anim/button_elevation.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/button_elevation.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/btn_border.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable-v24/btn_disabled.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/btn_app.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable-v24/btn_pressed.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_start_login.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/header.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModelFactory.java" />
         <option value="$PROJECT_DIR$/src/main/res/values/integers.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_start.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/Validator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/PasswordPatterns.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginRoom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/UserRoom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModelRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/SharedPreferencesTokenUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/TokenUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_start.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_start_login.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/header.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModelRepository.java" />
       </list>
     </option>
   </component>
@@ -213,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -237,6 +198,48 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="socialwave" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocialWave" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="socialwave" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="room" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocialWave" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="socialwave" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="room" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocialWave" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="socialwave" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="room" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocialWave" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="socialwave" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="room" type="462c0819:PsiDirectoryNode" />
+              <item name="rooms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocialWave" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="socialwave" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -246,6 +249,14 @@
               <item name="socialwave" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocialWave" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="socialwave" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SocialWave" type="1abcf292:AndroidViewProjectNode" />
@@ -272,12 +283,6 @@
               <item name="SocialWave" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="SocialWave" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
@@ -296,6 +301,7 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,6 +311,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.devicedev.socialwave.data.room" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devicedev.socialwave.utils" />
     </key>
@@ -410,7 +419,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Build Variants" order="1" side_tool="true" />
@@ -420,7 +428,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Captures" order="7" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" x="765" y="55" width="461" height="589" id="Project" order="8" visible="true" weight="0.20600858" />
+      <window_info content_ui="combo" x="765" y="55" width="461" height="589" id="Project" order="8" visible="true" weight="0.20600858" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32891566" />
@@ -440,20 +448,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/widget/EditText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -472,12 +466,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ad9197c82168c52d5b03d820f263a233/res/values/values.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -551,20 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/data/room/entities/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="52" selection-start-column="52" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-            <element signature="e#1600#1601#0" expanded="true" />
-            <element signature="e#1640#1641#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/generated/source/apt/debug/com/devicedev/socialwave/data/room/dao/UserDao_Impl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -576,16 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/SharedPreferencesTokenUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -619,32 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModelRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/main/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/edae63a98f6a5dcd5431171415a3d91c/res/values/values.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-231">
@@ -659,10 +603,6 @@
           <caret line="1" column="69" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/drawable/gradient_background.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -699,16 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/TokenUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -716,49 +646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_start_login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="112" column="38" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
-          <folding>
-            <element signature="e#4200#4215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModelFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModelFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="90" selection-start-line="17" selection-start-column="90" selection-end-line="17" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/header.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -793,14 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_start.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/PasswordPatterns.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -818,34 +701,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/data/room/entities/UserEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        <state relative-caret-position="268">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2165#2233#0" expanded="true" />
-            <element signature="e#2883#4330#0" expanded="true" />
-            <element signature="e#3980#4048#0" expanded="true" />
-            <element signature="e#4329#4330#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_register.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="58" selection-start-line="85" selection-start-column="58" selection-end-line="85" selection-end-column="58" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModelFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="61" lean-forward="true" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/data/room/rooms/UserRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterViewModelRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/main/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/SharedPreferencesTokenUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/utils/TokenUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_start.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_register.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/header.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/register/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="66" column="56" lean-forward="true" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1966#2838#0" expanded="true" />
+            <element signature="e#2837#2838#0" expanded="true" />
+            <element signature="e#4537#4700#0" expanded="true" />
+            <element signature="e#4699#4700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_start_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginViewModelRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/devicedev/socialwave/ui/login/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="118" column="23" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
+        <state relative-caret-position="-1647">
+          <caret line="65" column="121" selection-start-line="65" selection-start-column="121" selection-end-line="65" selection-end-column="121" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2459#4553#0" expanded="true" />
+            <element signature="e#4552#4553#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -65,8 +65,7 @@
             android:layout_height="match_parent"
             android:ems="10"
             android:hint="@string/email_hint"
-            android:inputType="textEmailAddress"
-            android:text="devicedem@gmail.com" />
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,8 +92,7 @@
             android:layout_height="match_parent"
             android:ems="10"
             android:hint="@string/password_hint"
-            android:inputType="textPassword"
-            android:text="wasea390jsC" />
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

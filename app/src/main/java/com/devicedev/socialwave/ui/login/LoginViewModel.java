@@ -18,8 +18,6 @@ public class LoginViewModel extends AndroidViewModel {
 
     private LiveData<UserTokenResponse> userTokenResponse;
 
-    private LiveData<UserEntity> userEntityLiveData;
-
 
     public LoginViewModel(@NonNull Application application, ViewModelResponse response) {
         super(application);
@@ -28,13 +26,7 @@ public class LoginViewModel extends AndroidViewModel {
 
         userTokenResponse = repository.getUserTokenResponse();
 
-        userEntityLiveData = repository.getLastUser();
 
-
-    }
-
-    public LiveData<UserEntity> getUserEntityLiveData() {
-        return userEntityLiveData;
     }
 
     public LiveData<UserTokenResponse> getUserTokenResponse() {

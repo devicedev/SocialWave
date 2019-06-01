@@ -35,12 +35,6 @@ public class LoginActivity extends AppCompatActivity implements ViewModelRespons
 
     private static final Integer SHOW_SPLASH_SCREEN = 1 * 1000;
 
-    public static final String PREFERENCES = "Social_Wave";
-
-    public static final String TOKEN_KEY = "jwt_token";
-
-
-
 
     private ConstraintLayout rootLayout;
 
@@ -69,7 +63,11 @@ public class LoginActivity extends AppCompatActivity implements ViewModelRespons
         setContentView(R.layout.activity_start);
 
 
-        token = SharedPreferencesTokenUtils.get(getSharedPreferences(LoginActivity.PREFERENCES, MODE_PRIVATE));
+        SharedPreferencesTokenUtils.save(getSharedPreferences(SharedPreferencesTokenUtils.PREFERENCES, MODE_PRIVATE),null);
+
+        token = SharedPreferencesTokenUtils.get(getSharedPreferences(SharedPreferencesTokenUtils.PREFERENCES, MODE_PRIVATE));
+
+
 
         final Boolean tokenIsValid = TokenUtils.isValid(token);
 
@@ -101,20 +99,11 @@ public class LoginActivity extends AppCompatActivity implements ViewModelRespons
 
                             token = userTokenResponse.getToken();
 
-                            SharedPreferencesTokenUtils.save(getSharedPreferences(LoginActivity.PREFERENCES, MODE_PRIVATE),token);
+                            SharedPreferencesTokenUtils.save(getSharedPreferences(SharedPreferencesTokenUtils.PREFERENCES, MODE_PRIVATE),token);
 
                             startMainActivity();
 
 
-                        }
-                    });
-                    loginViewModel.getUserEntityLiveData().observe(LoginActivity.this, new Observer<UserEntity>() {
-                        @Override
-                        public void onChanged(UserEntity userEntity) {
-                            Log.d(TAG, "onChanged: " + userEntity);
-                            if(userEntity == null)
-                                return;
-                            Log.d(TAG, "onChanged: " + userEntity.getId());
                         }
                     });
 
