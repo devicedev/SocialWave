@@ -1,4 +1,4 @@
-package com.devicedev.socialwave.login;
+package com.devicedev.socialwave.ui.main.fragments.Profile;
 
 import android.app.Application;
 
@@ -8,13 +8,16 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.devicedev.socialwave.ui.utils.ViewModelResponse;
 
-public class LoginViewModelFactory implements ViewModelProvider.Factory {
+public class ProfileViewModelFactory implements ViewModelProvider.Factory {
+
+    private String token;
 
     private Application application;
 
     private ViewModelResponse response;
 
-    public LoginViewModelFactory(Application application, ViewModelResponse response) {
+    public ProfileViewModelFactory(String token, Application application, ViewModelResponse response) {
+        this.token = token;
         this.application = application;
         this.response = response;
     }
@@ -22,6 +25,6 @@ public class LoginViewModelFactory implements ViewModelProvider.Factory {
     @NonNull
     @Override
     public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
-        return (T) new LoginViewModel(application,response);
+        return (T) new ProfileViewModel(token,application,response);
     }
 }

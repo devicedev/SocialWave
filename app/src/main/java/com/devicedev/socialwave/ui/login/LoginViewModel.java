@@ -1,4 +1,4 @@
-package com.devicedev.socialwave.ui.login;
+package com.devicedev.socialwave.login;
 
 import android.app.Application;
 
@@ -11,8 +11,7 @@ import com.devicedev.socialwave.data.api.responses.UserTokenResponse;
 import com.devicedev.socialwave.ui.utils.ViewModelResponse;
 
 public class LoginViewModel extends AndroidViewModel {
-    private static final String TAG = LoginViewModel.class.getSimpleName();
-
+    private static final String TAG = "LoginViewModel";
 
     private LoginViewModelRepository repository;
 

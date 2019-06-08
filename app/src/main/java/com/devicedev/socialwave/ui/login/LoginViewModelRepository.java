@@ -1,10 +1,11 @@
-package com.devicedev.socialwave.ui.login;
+package com.devicedev.socialwave.login;
 
 import android.app.Application;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
+import com.devicedev.socialwave.R;
 import com.devicedev.socialwave.data.room.MyDatabase;
 import com.devicedev.socialwave.data.room.rooms.UserRoom;
 import com.devicedev.socialwave.data.room.entities.UserEntity;
@@ -22,7 +23,7 @@ import retrofit2.Response;
 
 public class LoginViewModelRepository {
 
-    private static final String TAG = LoginViewModelRepository.class.getSimpleName();
+    private static final String TAG = "LoginViewModelRepositor";
 
     private ViewModelResponse responseCallback;
 
@@ -59,16 +60,23 @@ public class LoginViewModelRepository {
         return userTokenResponseMutableLiveData;
     }
 
-    public void login(final UserEntity userEntity){
+    public void login(final UserEntity userEntity) {
 
         Call<UserTokenResponse> call = userClient.login(userEntity);
 
         call.enqueue(new Callback<UserTokenResponse>() {
             @Override
             public void onResponse(Call<UserTokenResponse> call, Response<UserTokenResponse> response) {
-                if(!response.isSuccessful()){
+                if (!response.isSuccessful()) {
 
-                    responseCallback.onError(ErrorUtils.parseError(response).getMessage());
+//                    ErrorUtils.Error error = ErrorUtils.parseError(response);
+
+//                    responseCallback.onError(error.getErrors() == null ? error.getMessage() : error.getErrors().get("msg"));
+                    if (response.code() == 400)
+                        responseCallback.onError(R.string.val_error_email_password_invalid);
+                    else
+                        responseCallback.onError(R.string.err_internal_server_error);
+
 
                     return;
                 }
@@ -76,14 +84,14 @@ public class LoginViewModelRepository {
 
                 UserEntity userEntity = userTokenResponse.getUserEntity();
 
-                if(lastUser.getValue() != null)
+                if (lastUser.getValue() != null)
                     userRoom.delete(lastUser.getValue());
 
                 userRoom.insert(userEntity);
 
                 userTokenResponseMutableLiveData.postValue(userTokenResponse);
 
-                responseCallback.onSuccess("Successful login");
+                responseCallback.onSuccess(R.string.successful_login);
 
 
             }
@@ -91,19 +99,18 @@ public class LoginViewModelRepository {
             @Override
             public void onFailure(Call<UserTokenResponse> call, Throwable t) {
                 t.printStackTrace();
-                if(t instanceof IOException){
+                if (t instanceof IOException) {
 
-                    responseCallback.onError("No network");
+                    responseCallback.onError(R.string.err_no_network);
 
                 } else {
 
-                    responseCallback.onError("Conversion error");
+                    responseCallback.onError(R.string.err_conversion_error);
 
                 }
             }
         });
     }
-
 
 
 }
